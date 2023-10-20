@@ -1,9 +1,14 @@
 import turtle
-
+from random import random
 def recursive_pattern(t, depth, length, angle):
     if depth == 0:
         return
     else:
+        r = random()
+        g = random()
+        b = random()
+        # Gamer Turtle
+        t.color(r,g,b)
         # Forward
         t.forward(length)
 
