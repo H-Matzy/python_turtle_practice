@@ -11,8 +11,13 @@ def recursive_pattern(t, depth, length, angle):
         # Gamer Turtle
         t.color(r,g,b)
         # Forward
-        t.forward(length)
-
+        t.pendown()
+        t.forward(length/3)
+        t.penup()
+        t.forward(length/3)
+        t.pendown()
+        t.forward(length/3)
+        t.penup()
         # Right
         t.right(angle)
         recursive_pattern(t, depth - 1, length * 0.6,  angle)
