@@ -57,9 +57,9 @@ def main():
 
     # Set the initial position and angle
     t.penup()
-    t.goto(0, -150)
+    t.goto(0, 0)
     t.pendown()
-    t.setheading(90)  # Start facing up
+    t.setheading(180)  # Start facing up
 
     depth = 8  # Adjust the depth as needed
     length = 200  # Adjust the length of each step as needed
